@@ -7,23 +7,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../scss/main.scss" />
+    <link rel="stylesheet" href="../scss-2/main.scss" />
   </head>
-  <body>
-    <form class="form-1">
-      <fieldset>
+  <body class="l-body">
+    <form>
+      <fieldset class="id">
         <input
           type="text"
           id="firstname"
           name="firstname"
           placeholder="Prénom"
+          class="id-firstname"
         />
-        <input type="text" id="name" name="name" placeholder="Nom" />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Nom"
+          class="id-name"
+        />
       </fieldset>
-      <fieldset>
+      <fieldset class="language">
         <input type="radio" id="french" name="language" value="french" />
         <label for="french">Français</label>
         <br />
@@ -33,7 +40,7 @@
         <input type="radio" id="italian" name="language" value="italian" />
         <label for="italian">Italien</label>
       </fieldset>
-      <fieldset>
+      <fieldset class="option">
         <label>
           <input type="checkbox" name="option" value="newsletter" />
           S’abonner à la newsletter
@@ -44,19 +51,19 @@
           J’accepte les conditions générales
         </label>
       </fieldset>
-      <fieldset>
+      <fieldset class="country">
         <select id="country" name="country">
           <option value="ch">Suisse</option>
           <option value="fr">France</option>
           <option value="de">Allemagne</option>
         </select>
       </fieldset>
-      <fieldset>
+      <fieldset class="comment">
         <label for="comment">Remarque</label>
         <br />
-        <textarea id="comment" name="comment" class="comment"></textarea>
+        <input type="text" id="comment" name="comment" class="comment-box" />
       </fieldset>
-      <fieldset>
+      <fieldset class="button">
         <button type="submit">Envoyer!</button>
       </fieldset>
     </form>
