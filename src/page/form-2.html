@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>eikon parcel starter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../scss/main.scss" />
+  </head>
+  <body>
+    <form class="form-1">
+      <fieldset>
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          placeholder="Prénom"
+        />
+        <input type="text" id="name" name="name" placeholder="Nom" />
+      </fieldset>
+      <fieldset>
+        <input type="radio" id="french" name="language" value="french" />
+        <label for="french">Français</label>
+        <br />
+        <input type="radio" id="german" name="language" value="german" />
+        <label for="german">Allemand</label>
+        <br />
+        <input type="radio" id="italian" name="language" value="italian" />
+        <label for="italian">Italien</label>
+      </fieldset>
+      <fieldset>
+        <label>
+          <input type="checkbox" name="option" value="newsletter" />
+          S’abonner à la newsletter
+        </label>
+        <br />
+        <label>
+          <input type="checkbox" name="option" value="general-condition" />
+          J’accepte les conditions générales
+        </label>
+      </fieldset>
+      <fieldset>
+        <select id="country" name="country">
+          <option value="ch">Suisse</option>
+          <option value="fr">France</option>
+          <option value="de">Allemagne</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label for="comment">Remarque</label>
+        <br />
+        <textarea id="comment" name="comment" class="comment"></textarea>
+      </fieldset>
+      <fieldset>
+        <button type="submit">Envoyer!</button>
+      </fieldset>
+    </form>
+    <script src="../js/main.js" type="module"></script>
+  </body>
+</html>

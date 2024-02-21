@@ -42,3 +42,17 @@ video {
 /* ====================================
 // base rules
 // ==================================== */
+
+* {
+  color: var(--black, #000);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 116.667% */
+}
+
+fieldset {
+  border: none;
+  margin: 35px;
+}
