@@ -1,0 +1,28 @@
+.id-firstname,
+.id-name {
+  width: 195px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #ababab;
+  color: #ababab;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 15px;
+}
+
+.id-firstname:hover,
+.id-name:hover {
+  border-color: #000;
+}
+
+.id-firstname {
+  margin-right: 5px;
+}
+
+.id-name {
+  margin-left: 5px;
+}
