@@ -43,6 +43,11 @@ video {
 // base rules
 // ==================================== */
 
+body {
+  width: 476px;
+  height: 644px;
+}
+
 form {
   color: #dc2e55;
   font-family: "Playfair Display", serif;
@@ -54,7 +59,7 @@ form {
 
 input,
 button,
-option {
+select {
   font-family: "Playfair Display", serif;
   font-size: 18px;
   font-style: normal;
@@ -64,5 +69,5 @@ option {
 
 fieldset {
   border: none;
-  margin: 15px;
+  margin: 30px;
 }

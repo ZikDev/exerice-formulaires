@@ -52,19 +52,19 @@
         </label>
       </fieldset>
       <fieldset class="country">
-        <select id="country" name="country">
-          <option value="ch">Suisse</option>
-          <option value="fr">France</option>
-          <option value="de">Allemagne</option>
+        <select id="country" name="country" class="country-select">
+          <option value="ch" class="country-name">Suisse</option>
+          <option value="fr" class="country-name">France</option>
+          <option value="de" class="country-name">Allemagne</option>
         </select>
       </fieldset>
       <fieldset class="comment">
         <label for="comment">Remarque</label>
         <br />
-        <input type="text" id="comment" name="comment" class="comment-box" />
+        <textarea id="comment" name="comment" class="comment-box"></textarea>
       </fieldset>
       <fieldset class="button">
-        <button type="submit">Envoyer!</button>
+        <button type="submit" class="button">Envoyer</button>
       </fieldset>
     </form>
     <script src="../js/main.js" type="module"></script>

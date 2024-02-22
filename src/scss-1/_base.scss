@@ -54,7 +54,7 @@ form {
 
 input,
 button,
-option {
+select {
   font-family: Roboto;
   font-size: 18px;
   font-style: normal;
@@ -65,4 +65,9 @@ option {
 fieldset {
   border: none;
   margin: 17.5px;
+}
+
+textarea {
+  width: 406px;
+  height: 150px !important;
 }

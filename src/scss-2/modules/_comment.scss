@@ -1,9 +1,7 @@
 .comment-box {
-  display: flex;
   width: 406px;
-  height: 150px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
+  height: 150px !important;
+  border-radius: 10px;
   background: #303245;
+  border: none;
 }
