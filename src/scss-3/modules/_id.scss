@@ -50,11 +50,13 @@
   transform-origin: left;
 }
 
-input:focus {
+input:focus,
+input:valid {
   outline: #000 1px solid;
 }
 
-input:focus + label {
+input:focus + label,
+input:valid + label {
   transform: translateY(-27px) scale(0.7);
   color: #000;
 }
