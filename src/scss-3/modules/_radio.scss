@@ -1,0 +1,30 @@
+.radio-placeholder {
+  display: inline-block; /* pour que le div soit à côté du texte */
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+  border-radius: 10px;
+  border: 2px solid #f44335;
+  background: none;
+}
+.radio-placeholder-in {
+  display: block; /* pour que le div soit à côté du texte */
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: none;
+  transition: box-shadow 0.1s;
+}
+
+input:hover + .radio-placeholder .radio-placeholder-in {
+  box-shadow: 0 0 0 12px #f4433526;
+  background: #f4433526;
+}
+
+input:checked + .radio-placeholder .radio-placeholder-in {
+  background: #f44335;
+}
+
+.radio input {
+  display: none;
+}
