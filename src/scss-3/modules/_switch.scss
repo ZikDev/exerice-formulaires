@@ -1,10 +1,17 @@
 /* l'élément allongé, qui contient le rond se déplace */
+.switch {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
 .switch-wrapper {
   display: inline-block; /* pour que le div soit à côté du texte */
   width: 35px;
   height: 14px;
   border-radius: 10px;
   background: rgba(244, 67, 53, 0.5);
+  margin: 10px 27px 10px 0;
 }
 
 /* le rond qui se déplace */
@@ -15,17 +22,15 @@
   border-radius: 10px;
   background: #f44335;
   box-shadow: 1px 1px 3px 2px #00000040;
-  transition: box-shadow 0.1s;
+  transition: box-shadow 0.1s, margin 0.2s;
 }
 
 input:hover + .switch-wrapper .switch-inner {
   box-shadow: 1px 1px 3px 2px #00000040, 0 0 0 7px #f4433526;
-  transition: box-shadow 0.1s;
 }
 
 input:checked + .switch-wrapper .switch-inner {
   margin-left: 15px;
-  transition: margin 0.2s;
 }
 
 .switch input {

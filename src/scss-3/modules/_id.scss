@@ -1,3 +1,9 @@
+.id {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
 .id-firstname,
 .id-name {
   width: 195px;
@@ -5,13 +11,14 @@
   flex-shrink: 0;
   border-radius: 4px;
   border: 1px solid #ababab;
-  color: #ababab;
+  color: #000;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   padding: 0 15px;
+  transition: border 0.2s;
 }
 
 .id-firstname:hover,
@@ -25,4 +32,29 @@
 
 .id-name {
   margin-left: 5px;
+}
+
+.id-textfield {
+  position: relative;
+}
+
+.id-textfield label {
+  position: absolute;
+  top: 18px;
+  left: 13px;
+  padding: 0 3px;
+  pointer-events: none;
+  background: white;
+  color: #ababab;
+  transition: transform 0.3s, color 0.3s, outline 0.3s;
+  transform-origin: left;
+}
+
+input:focus {
+  outline: #000 1px solid;
+}
+
+input:focus + label {
+  transform: translateY(-27px) scale(0.7);
+  color: #000;
 }

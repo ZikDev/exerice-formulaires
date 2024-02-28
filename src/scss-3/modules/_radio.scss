@@ -1,8 +1,15 @@
+.radio {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
 .radio-placeholder {
   display: inline-block; /* pour que le div soit à côté du texte */
   width: 20px;
   height: 20px;
   padding: 3px;
+  margin: 7px 19px 7px 0;
   border-radius: 10px;
   border: 2px solid #f44335;
   background: none;

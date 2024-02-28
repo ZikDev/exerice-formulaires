@@ -15,20 +15,19 @@
   <body class="l-body">
     <form>
       <fieldset class="id">
-        <input
-          type="text"
-          id="firstname"
-          name="firstname"
-          placeholder="Prénom"
-          class="id-firstname"
-        />
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Nom"
-          class="id-name"
-        />
+        <div class="id-textfield">
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            class="id-firstname"
+          />
+          <label>Prénom</label>
+        </div>
+        <div class="id-textfield">
+          <input type="text" id="name" name="name" class="id-name" />
+          <label>Nom</label>
+        </div>
       </fieldset>
       <fieldset class="language">
         <label class="radio" for="french">
@@ -38,7 +37,6 @@
           </div>
           Français
         </label>
-        <br />
         <label class="radio" for="german">
           <input type="radio" id="german" name="language" value="german" />
           <div class="radio-placeholder">
@@ -46,7 +44,6 @@
           </div>
           Allemand
         </label>
-        <br />
         <label class="radio" for="italian">
           <input type="radio" id="italian" name="language" value="italian" />
           <div class="radio-placeholder">
@@ -63,13 +60,12 @@
           </div>
           S'inscrire à la newsletter
         </label>
-        <br />
         <label class="switch">
           <input type="checkbox" name="option" value="general-condition" />
           <div class="switch-wrapper">
             <div class="switch-inner"></div>
           </div>
-          S'inscrire à la newsletter
+          J’accepte les conditions générales
         </label>
       </fieldset>
     </form>
